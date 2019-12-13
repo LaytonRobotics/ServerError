@@ -6,10 +6,10 @@ extern brain Brain;
 extern controller Controller1;
 extern motor chute;
 extern motor intake1;
-extern motor left;
-extern motor right;
 extern motor intake2;
 extern motor intakeR2;
+extern motor LM;
+extern motor RM;
 
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Text.
