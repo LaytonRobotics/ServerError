@@ -12,6 +12,7 @@
 // intakeR2             motor         17              
 // LM                   motor         18              
 // RM                   motor         20              
+// intakeL2             motor         15              
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 using namespace vex;
@@ -48,16 +49,24 @@ void usercontrol(void) {
     if(Controller1.ButtonR1.pressing()){
       intake1.spin(fwd, 100,pct);
       intake2.spin(fwd, 100,pct);
+      intakeL2.spin(fwd,100,pct);
+      intakeR2.spin(fwd,100,pct);
     }
     else if(Controller1.ButtonR2.pressing()){
       intake1.spin(reverse, 100,pct);
       intake2.spin(reverse, 100,pct);
+      intakeL2.spin(reverse, 100,pct);
+      intakeR2.spin(reverse, 100,pct);
     }
     else{
       intake1.spin(fwd, 0, pct);
       intake2.spin(fwd, 0, pct);
+      intakeL2.spin(fwd, 0, pct);
+      intakeR2.spin(fwd, 0, pct);
       intake1.setStopping(hold);
       intake2.setStopping(hold);
+      intakeR2.setStopping(hold);
+      intakeL2.setStopping(hold);
 
 
     }
@@ -75,6 +84,7 @@ int main() {
   LM.spin(fwd,100,pct);
   intake1.spin(reverse, 100,pct);
   intake2.spin(reverse, 100,pct);
+  
  
 
 

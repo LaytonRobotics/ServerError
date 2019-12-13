@@ -12,9 +12,10 @@ controller Controller1 = controller(primary);
 motor chute = motor(PORT1, ratio18_1, false);
 motor intake1 = motor(PORT19, ratio18_1, false);
 motor intake2 = motor(PORT12, ratio18_1, true);
-motor intakeR2 = motor(PORT17, ratio18_1, false);
+motor intakeR2 = motor(PORT17, ratio18_1, true);
 motor LM = motor(PORT18, ratio18_1, false);
 motor RM = motor(PORT20, ratio18_1, true);
+motor intakeL2 = motor(PORT15, ratio18_1, false);
 
 // VEXcode generated functions
 // define variables used for controlling motors based on controller inputs

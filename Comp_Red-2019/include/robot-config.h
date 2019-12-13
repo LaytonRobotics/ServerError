@@ -10,6 +10,7 @@ extern motor intake2;
 extern motor intakeR2;
 extern motor LM;
 extern motor RM;
+extern motor intakeL2;
 
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Text.
